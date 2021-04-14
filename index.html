@@ -6,9 +6,35 @@
 
             @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+            @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+            html, body {
+                overflow-x: hidden;
+            }
+
             ul {
                 font-family: 'Roboto', sans-serif;
                 font-size: 13px;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: inline;
+            }
+
+            ul, .footer-link-left {
+                font-family: 'Arimo', sans-serif;
+                font-size: 14px;
+                color: #4f4f4f;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: inline;
+            }
+
+            ul, .footer-link-right {
+                font-family: 'Arimo', sans-serif;
+                font-size: 14px;
+                color: #4f4f4f;
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -133,20 +159,45 @@
                 color: black;
             }
 
+            #footer-box-left {
+                position: absolute;
+                bottom: 0;
+                background-color: #f5f3f3;
+                border-top: 1px solid #cfc9c9;
+                margin: 0 -9999rem;
+                padding: 0.25rem 9999rem;
+            }
+
+            #footer-box-right {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-color: #f5f3f3;
+                margin: 0 -50px;
+                padding: 0.25rem 50px;
+            }
 
             .footer-link-left {
                 float: left;
-                margin-top: 470px;
-                background-color: grey;
-                list-style-type: none;
-                overflow: hidden;
+                margin-right: 20px;
+                padding: 5px 5px 5px 5px;
             }
 
             .footer-link-right {
                 float: right;
-                margin-top: 470px;
                 margin-right: 20px;
                 padding: 5px 5px 5px 5px;
+            }
+
+            #location {
+                font-family: 'Arimo', sans-serif;
+                font-size: 14px;
+                color: #4f4f4f;
+                position: absolute;
+                bottom: 40px;
+                background-color: #f5f3f3;
+                margin: 0 -9999rem -10px -9998.7rem;
+                padding: 10px 9999rem 15px 9999rem;
             }
 
         </style>
@@ -178,18 +229,24 @@
         </div>
         
     </body>
-    <footer id="footer-box">
-        <div>
+    <footer>
+        <div id="location">Austria</div>
+        <div id="footer-box-left">
             <ul>
-                <li class="footer-link-left">About</li>
-                <li class="footer-link-left">Advertising</li>
-                <li class="footer-link-left">Business</li>
-                <li class="footer-link-left">How Search works</li>
-                <li class="footer-link-right">Settings</li>
-                <li class="footer-link-right">Terms</li>
-                <li class="footer-link-right">Privacy</li>
+                <li class="footer-link-left"><a href="#about">About</a></li>
+                <li class="footer-link-left"><a href="#advertising">Advertising</a></li>
+                <li class="footer-link-left"><a href="#business">Business</a></li>
+                <li class="footer-link-left"><a href="#how-search-works">How Search works</a></li>
             </ul>
         </div>
+        <div id="footer-box-right">
+            <ul>
+                <li class="footer-link-right"><a href="#settings">Settings</a></li>
+                <li class="footer-link-right"><a href="#terms">Terms</a></li>
+                <li class="footer-link-right"><a href="#privacy">Privacy</a></li>
+            </ul>
+        </div>
+        
     </footer>
     
 </html>
